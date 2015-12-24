@@ -2,11 +2,13 @@
 <html>
 <head>
 	<title>HeyUI-button</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../base/base.css">
 	<link rel="stylesheet" type="text/css" href="./button.css">
 	<style>
 	div.block-btn{
-		width: 500px;
+		max-width: 500px;
 		padding: 10px;
 		background-color: #ddd;
 	}
@@ -14,6 +16,13 @@
 </head>
 <body>
 <h3>按钮-BUTTON</h3><hr>
+
+<h4>默认风格</h4><hr>
+
+<h5>1.默认样式</h5>
+<div class="h-quote">
+	添加class: h-btn h-btn-blue/primary h-btn-green/success h-btn-sky-blue/info h-btn-orange/warning h-btn-red/danger
+</div>
 <button class="h-btn">默认</button>
 <button class="h-btn h-btn-blue">主要-blue</button>
 <button class="h-btn h-btn-primary">主要-primary</button>
@@ -25,15 +34,21 @@
 <button class="h-btn h-btn-warning">警告-warning</button>
 <button class="h-btn h-btn-red">危险-red</button>
 <button class="h-btn h-btn-danger">危险-danger</button>
-<p>input(submit,reset,button)</p>
+
+<h5>2.input(submit,reset,button)</h5>
 <input type="submit" class="h-btn" value="提交">
 <input type="reset" class="h-btn h-btn-orange h-btn-round" value="重置">
 <input type="button" class="h-btn h-btn-green h-btn-round" value="按钮">
-<p>a link 按钮</p>
+
+<h5>3.a link 按钮</h5>
 <a href="javascript:;" class="h-btn h-btn-blue">链接</a>
 <a href="javascript:;" class="h-btn h-btn-orange h-btn-round">链接</a>
 <a href="javascript:;" class="h-btn h-btn-green h-btn-round">链接</a>
-<p>圆角</p>
+
+<h5>4.圆角</h5>
+<div class="h-quote">
+	添加class: h-btn-round
+</div>
 <button class="h-btn h-btn-round">默认</button>
 <button class="h-btn h-btn-blue h-btn-round">主要-blue</button>
 <button class="h-btn h-btn-primary h-btn-round">主要-primary</button>
@@ -45,23 +60,91 @@
 <button class="h-btn h-btn-warning h-btn-round">警告-warning</button>
 <button class="h-btn h-btn-red h-btn-round">危险-red</button>
 <button class="h-btn h-btn-danger h-btn-round">危险-danger</button>
-<p>大小</p>
+
+<h5>5.大小</h5>
+<div class="h-quote">
+	三种大小: large small mini<br />
+	分别对应的class: h-btn-large h-btn-small h-btn-mini
+</div>
 <button class="h-btn h-btn-blue h-btn-round h-btn-large">主要-blue-large</button>
 <button class="h-btn h-btn-blue h-btn-round h-btn-small">主要-blue-small</button>
 <button class="h-btn h-btn-blue h-btn-round h-btn-mini">主要-blue-mini</button>
-<p>块按钮 Block Button</p>
+
+<h5>6.块按钮 Block Button</h5>
+<div class="h-quote">
+	添加class: h-btn-block
+</div>
 <div class="block-btn">
 	<button class="h-btn h-btn-orange h-btn-round h-btn-block">警告-orange-block</button>
 </div>
-<p>活动状态-active</p>
+
+<h5>7.活动状态-active</h5>
+<div class="h-quote">
+	直接在button添加class active
+</div>
 <button class="h-btn h-btn-blue h-btn-round active">主要-blue-active</button>
 <button class="h-btn h-btn-orange h-btn-round active">警告-blue-active</button>
 <button class="h-btn h-btn-danger h-btn-round active">危险-blue-active</button>
-<p>禁用-disabled</p>
+
+<h5>8.禁用-disabled</h5>
+<div class="h-quote">
+	两种禁用方式：1.添加属性 disabled="disabled" 2.添加class .disabled (这种方式实际上需配合JS才能达到真正禁用效果)
+</div>
 <button class="h-btn h-btn-blue h-btn-round" disabled="disabled">禁用-blue-disabled</button>
 <button class="h-btn h-btn-orange h-btn-round" disabled="disabled">禁用-blue-disabled</button>
 <button class="h-btn h-btn-danger h-btn-round" disabled="disabled">禁用-blue-disabled</button>
 <input type="button" class="h-btn h-btn-green h-btn-round disabled" value="input-按钮-disabled">
 <a href="javascript:;" class="h-btn h-btn-info h-btn-round disabled">链接按钮-disabled</a>
+
+<hr>
+
+<h4 class="m-top-30">light(轻快)风格</h4><hr>
+<div class="h-quote">
+	添加.light
+</div>
+<button class="h-btn h-btn-blue light">主要-blue-light</button>
+<button class="h-btn h-btn-green h-btn-round light">成功-green-light</button>
+<button class="h-btn h-btn-sky-blue h-btn-round light">信息-sky-blue-light</button>
+<button class="h-btn h-btn-orange h-btn-round light">警告-warning-light</button>
+<button class="h-btn h-btn-red h-btn-round light">危险-red-light</button>
+<h5>input(submit,reset,button)</h5>
+<input type="submit" class="h-btn light" value="提交">
+<input type="reset" class="h-btn h-btn-orange h-btn-round light" value="重置">
+<input type="button" class="h-btn h-btn-green h-btn-round light" value="按钮">
+<h5>a link 按钮</h5>
+<a href="javascript:;" class="h-btn h-btn-blue light">链接</a>
+<a href="javascript:;" class="h-btn h-btn-orange h-btn-round light">链接</a>
+<a href="javascript:;" class="h-btn h-btn-green h-btn-round light">链接</a>
+<h5>圆角</h5>
+<button class="h-btn h-btn-round light">默认</button>
+<button class="h-btn h-btn-blue h-btn-round light">主要-blue</button>
+<button class="h-btn h-btn-primary h-btn-round light">主要-primary</button>
+<button class="h-btn h-btn-green h-btn-round light">成功-green</button>
+<button class="h-btn h-btn-success h-btn-round light">成功-success</button>
+<button class="h-btn h-btn-sky-blue h-btn-round light">信息-sky-blue</button>
+<button class="h-btn h-btn-info h-btn-round light">信息-info</button>
+<button class="h-btn h-btn-orange h-btn-round light">警告-orange</button>
+<button class="h-btn h-btn-warning h-btn-round light">警告-warning</button>
+<button class="h-btn h-btn-red h-btn-round light">危险-red</button>
+<button class="h-btn h-btn-danger h-btn-round light">危险-danger</button>
+<h5>大小</h5>
+<button class="h-btn h-btn-blue h-btn-round light h-btn-large">主要-blue-large</button>
+<button class="h-btn h-btn-blue h-btn-round light h-btn-small">主要-blue-small</button>
+<button class="h-btn h-btn-blue h-btn-round light h-btn-mini">主要-blue-mini</button>
+<h5>块按钮 Block Button</h5>
+<div class="block-btn">
+	<button class="h-btn h-btn-orange h-btn-round light h-btn-block">警告-orange-block</button>
+</div>
+<h5>活动状态-active</h5>
+<button class="h-btn h-btn-blue h-btn-round light active">主要-blue-active</button>
+<button class="h-btn h-btn-orange h-btn-round light active">警告-blue-active</button>
+<button class="h-btn h-btn-danger h-btn-round light active">危险-blue-active</button>
+<h5>禁用-disabled</h5>
+<button class="h-btn h-btn-blue h-btn-round light" disabled="disabled">禁用-blue-disabled</button>
+<button class="h-btn h-btn-orange h-btn-round light" disabled="disabled">禁用-blue-disabled</button>
+<button class="h-btn h-btn-danger h-btn-round light" disabled="disabled">禁用-blue-disabled</button>
+<input type="button" class="h-btn h-btn-green h-btn-round disabled light" value="input-按钮-disabled">
+<a href="javascript:;" class="h-btn h-btn-info h-btn-round disabled light">链接按钮-disabled</a>
+
 </body>
 </html>

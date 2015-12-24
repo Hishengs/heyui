@@ -2,42 +2,90 @@
 <html>
 <head>
 	<title>HeyUI-form</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../base/base.css">
 	<link rel="stylesheet" type="text/css" href="./form.css">
 	<link rel="stylesheet" type="text/css" href="../button/button.css">
 	<style>
-	*{
-		font-family: 'Microsoft Yahei'
-	}
-	div.form{width: 600px;}
+		div.form{max-width: 100%;}
 	</style>
 </head>
 <body>
 <div class="form">
-	<h3>表单 Form</h3>
-	<h4>Basic</h4>
-	<p>1.input</p>
+	<h3>表单 Form</h3><hr>
+
+	<h4>1.基础样式 Basic</h4><hr>
+	<p>1.1 input</p>
 	<input type="text" class="h-input" placeholder="在此输入文字">
 	<button class="h-btn h-btn-primary">提交</button>
-	<p>2.textarea</p>
+	<p>1.2 textarea</p>
 	<textarea name="" id="" cols="30" rows="3"></textarea>
-	<p>3.select</p>
+	<p>1.3 select</p>
 	<select name="sl" id="sl">
 		<option value="0">梅西</option>
 		<option value="1">苏亚雷斯</option>
 		<option value="2">内马尔</option>
 	</select>
-	<h4>Disabled</h4>
+
+	<hr><h4>2.禁用 disabled</h4><hr>
+	<div class="h-quote">
+		添加class:disabled(需结合JS使用) 或者 添加属性:disabled="disabled"
+	</div>
 	<input type="text" class="h-input block" placeholder="在此输入文字" disabled="disabled">
-	<textarea name="" id="" class="block" cols="30" rows="3" disabled="disabled"></textarea>
-	<select name="sl" id="sl" class="block" disabled="disabled">
+	<textarea name="" id="" class="block m-top-20 disabled" cols="30" rows="3"></textarea>
+	<select name="sl" id="sl" class="block m-top-20" disabled="disabled">
 		<option value="0">梅西</option>
 		<option value="1">苏亚雷斯</option>
 		<option value="2">内马尔</option>
 	</select>
-	<p>只读</p>
+
+	<hr><h4>3.只读 readonly</h4><hr>
+	<div class="h-quote">
+		添加class:readonly(需结合JS使用) 或者 添加属性:readonly="readonly"
+	</div>
 	<input type="text" class="h-input block" placeholder="在此输入文字" readonly>
-	<h4>Round</h4>
+
+	<hr><h4>4.圆角 round</h4><hr>
+	<div class="h-quote">
+		添加class:round
+	</div>
 	<input type="text" class="round">
+
+	<hr><h4>5.状态输入</h4>
+	<div class="h-quote">
+		添加class:blue/primary green/success sky-blue/info orange/warning red/danger<br/>
+		添加class:focus 焦点状态
+	</div>
+	<input type="text" class="h-input" placeholder="默认">
+	<input type="text" class="h-input primary" placeholder="主要-primary">
+	<input type="text" class="h-input success" placeholder="成功-success">
+	<input type="text" class="h-input info" placeholder="信息-info">
+	<input type="text" class="h-input warning" placeholder="警告-warning">
+	<input type="text" class="h-input danger" placeholder="危险-danger">
+	<input type="text" class="h-input primary focus" placeholder="主要-primary-focus">
+	<input type="text" class="h-input success focus" placeholder="成功-success-focus">
+	<input type="text" class="h-input info focus" placeholder="信息-info-focus">
+	<input type="text" class="h-input warning focus" placeholder="警告-warning-focus">
+	<input type="text" class="h-input danger focus" placeholder="危险-danger-focus">
+
+	<hr><h4>6.大小 size</h4><hr>
+	<div class="h-quote">
+		通过设置: large,small,mini 达到想要的大小
+	</div>
+	<input type="text" class="h-input danger xlarge round" placeholder="危险-danger-xlarge-加大">
+	<input type="text" class="h-input primary large round" placeholder="主要-primary-large">
+	<input type="text" class="h-input info round" placeholder="信息-info-正常大小">
+	<input type="text" class="h-input warning small round" placeholder="警告-warning-small">
+	<input type="text" class="h-input danger mini round" placeholder="危险-danger-mini">
+
+	<hr><h4>7.checkbox radio</h4><hr>
+	<input type="checkbox" value="中国">中国
+	<input type="checkbox" value="美国">美国
+	<input type="checkbox" value="日本" disabled="disabled">日本
+	<input type="radio" value="梅西">梅西
+	<input type="radio" value="C罗">C罗
+	<input type="radio" value="苏亚雷斯">苏亚雷斯
 </div>
 </body>
 </html>

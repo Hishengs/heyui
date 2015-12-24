@@ -1,38 +1,41 @@
-/*default 默认样式*/
-.h-btn{
+/*1.default 默认样式*/
+.h-btn,.h-btn:visited{
 	padding: 4px 8px;
 	color: #333333;
+	font-size: 14px;
+	*font-size: 1.4rem;
 	background: #eeeeee;
 	border: 1px solid #cdcdcd;
 	display: inline-block;
 	cursor:pointer;
 	line-height: 1.328;
-	/* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
 }
-.h-btn:visited,
 .h-btn:hover,
 .h-btn:active,
 .h-btn .active{
 	background: #dddddd;
 	border: 1px solid #cccccc;
 }
-.h-btn:hover{
-	/* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); */
+.h-btn.light,.h-btn.light:visited{/*light*/
+	background-color: #ffffff;
+	color: #666 !important;
 }
-.h-btn-round{
-	border-radius: 3px;
+.h-btn.light:hover,
+.h-btn.light:active,
+.h-btn.light.active{
+	color: #222 !important;
+	border: 1px solid #aaa;
 }
 
-/*blue/primary*/
-.h-btn-blue,.h-btn-primary{
+/*2.主要 blue-primary*/
+.h-btn-blue,.h-btn-primary,.h-btn-blue:visited,.h-btn-primary:visited{
 	color: #ffffff;
 	background: #3a9aff;
 	border: 1px solid #2989ee;
 }
-.h-btn-blue:visited,
+
 .h-btn-blue:hover,
 .h-btn-blue:active,
-.h-btn-primary:visited,
 .h-btn-primary:hover,
 .h-btn-primary:active,
 .h-btn-primary.active,
@@ -40,34 +43,29 @@
 	background: #2989ee;
 	border: 1px solid #2989ee;
 }
+.h-btn-blue.light,.h-btn-primary.light,.h-btn-blue.light:visited,.h-btn-primary.light:visited{/*light*/
+	background-color: #ffffff;
+	color: #3a9aff !important;
+}
 
-/*orange:#ff6700*/
-.h-btn-orange,.h-btn-warning{
-	color: #ffffff;
-	background: #ff6700;
-	border: 1px solid #ee5600;
+.h-btn-blue.light:hover,
+.h-btn-blue.light:active,
+.h-btn-primary.light:hover,
+.h-btn-primary.light:active,
+.h-btn-primary.light.active,
+.h-btn-blue.light.active{
+	color: #2989ee !important;
+	border: 1px solid #2989ee;
 }
-.h-btn-orange:visited,
-.h-btn-orange:hover,
-.h-btn-orange:active,
-.h-btn-warning:visited,
-.h-btn-warning:hover,
-.h-btn-warning:active,
-.h-btn-orange.active,
-.h-btn-warning.active{
-	background: #ee5600;
-	border: 1px solid #ee5600;
-}
-/*green/success:#7ead67*/
-.h-btn-green,.h-btn-success{
+
+/*2.成功 green-success:#7ead67*/
+.h-btn-green,.h-btn-success,.h-btn-green:visited,.h-btn-success:visited{
 	color: #ffffff;
 	background: #8fbe33;
 	border: 1px solid #7ead22;
 }
-.h-btn-green:visited,
 .h-btn-green:hover,
 .h-btn-green:active,
-.h-btn-success:visited,
 .h-btn-success:hover,
 .h-btn-success:active,
 .h-btn-success.active,
@@ -75,16 +73,87 @@
 	background: #7ead22;
 	border: 1px solid #7ead22;
 }
-/*red/danger:#e53935*/
-.h-btn-red,.h-btn-danger{
+.h-btn-green.light,.h-btn-success.light,.h-btn-green.light:visited,.h-btn-success.light:visited{/*light*/
+	background-color: #ffffff;
+	color: #8fbe33 !important;
+}
+.h-btn-green.light:hover,
+.h-btn-green.light:active,
+.h-btn-success.light:hover,
+.h-btn-success.light:active,
+.h-btn-success.light.active,
+.h-btn-green.light.active{
+	color: #7ead22 !important;
+	border: 1px solid #7ead22;
+}
+
+/*3.信息 sky-blue/info:#e53935*/
+.h-btn-sky-blue,.h-btn-info,.h-btn-sky-blue:visited,.h-btn-info:visited{
+	color: #ffffff;
+	background: #8fbeef;
+	border: 1px solid #7eadde;
+}
+.h-btn-sky-blue:hover,
+.h-btn-sky-blue:active,
+.h-btn-info:hover,
+.h-btn-info:active,
+.h-btn-info.active,
+.h-btn-sky-blue.active{
+	background: #7eadde;
+	border: 1px solid #7eadde;
+}
+.h-btn-sky-blue.light,.h-btn-info.light,.h-btn-sky-blue.light:visited,.h-btn-info.light:visited{/*light*/
+	background-color: #ffffff;
+	color: #8fbeef !important;
+}
+.h-btn-sky-blue.light:hover,
+.h-btn-sky-blue.light:active,
+.h-btn-info.light:hover,
+.h-btn-info.light:active,
+.h-btn-info.light.active,
+.h-btn-sky-blue.light.active{
+	color: #7eadde !important;
+	border: 1px solid #7eadde;
+}
+
+
+/*4.警告 orange-warning*/
+.h-btn-orange,.h-btn-warning,.h-btn-orange:visited,.h-btn-warning:visited{
+	color: #ffffff;
+	background: #ff6700;
+	border: 1px solid #ee5600;
+}
+.h-btn-orange:hover,
+.h-btn-orange:active,
+.h-btn-warning:hover,
+.h-btn-warning:active,
+.h-btn-orange.active,
+.h-btn-warning.active{
+	background: #ee5600;
+	border: 1px solid #ee5600;
+}
+.h-btn-orange.light,.h-btn-warning.light,.h-btn-orange.light:visited,.h-btn-warning.light:visited{/*light*/
+	background-color: #ffffff;
+	color: #ff6700 !important;
+}
+.h-btn-orange.light:hover,
+.h-btn-orange.light:active,
+.h-btn-warning.light:hover,
+.h-btn-warning.light:active,
+.h-btn-warning.light.active,
+.h-btn-orange.light.active{
+	color: #de5620 !important;
+	border: 1px solid #de5620;
+}
+
+/*5.危险 red/danger:#e53935*/
+.h-btn-red,.h-btn-danger,.h-btn-red:visited,.h-btn-danger:visited{
 	color: #ffffff;
 	background: #e53935;
 	border: 1px solid #d42824;
 }
-.h-btn-red:visited,
 .h-btn-red:hover,
 .h-btn-red:active,
-.h-btn-danger:visited,
 .h-btn-danger:hover,
 .h-btn-danger:active,
 .h-btn-danger.active,
@@ -92,23 +161,26 @@
 	background: #d42824;
 	border: 1px solid #d42824;
 }
-/*sky-blue/info:#e53935*/
-.h-btn-sky-blue,.h-btn-info{
-	color: #ffffff;
-	background: #8fbedd;
-	border: 1px solid #7eadcc;
+.h-btn-red.light,.h-btn-danger.light,.h-btn-red.light:visited,.h-btn-danger.light:visited{/*light*/
+	background-color: #ffffff;
+	color: #d42824 !important;
 }
-.h-btn-sky-blue:visited,
-.h-btn-sky-blue:hover,
-.h-btn-sky-blue:active,
-.h-btn-info:visited,
-.h-btn-info:hover,
-.h-btn-info:active,
-.h-btn-info.active,
-.h-btn-sky-blue.active{
-	background: #7eadcc;
-	border: 1px solid #7eadcc;
+.h-btn-red.light:hover,
+.h-btn-red.light:active,
+.h-btn-danger.light:hover,
+.h-btn-danger.light:active,
+.h-btn-danger.light.active,
+.h-btn-red.light.active{
+	color: #b32f24 !important;
+	border: 1px solid #b32f24;
 }
+
+/*6.round 圆角*/
+.h-btn-round{
+	border-radius: 3px;
+}
+
+/*7.按钮大小 button size*/
 /*large*/
 .h-btn-large{
 	padding: 6px 10px;
@@ -124,23 +196,25 @@
 	padding: 1px;
 	font-size: 12px;
 }
-/*block button*/
+
+/*8.块按钮 block button*/
 .h-btn-block{
 	display: block;
 	width: 100%;
 	padding-left: 0;
 	padding-right: 0;
 }
-/*disabled 禁用状态*/
+
+/*9.禁用状态 disabled*/
 .h-btn[disabled],button[disabled],button.disabled,a.disabled,
 input[type="button"].disabled,
 input[type="submit"].disabled,
 input[type="reset"].disabled{
-  border-color: transparent;
   cursor: not-allowed;
   opacity: 0.45;
 }
-/*link button 链接按钮样式*/
+
+/*10.链接按钮样式 link button*/
 a.h-btn,
 a.h-btn-blue,
 a.h-btn-primary,
@@ -150,5 +224,6 @@ a.h-btn-orange,
 a.h-btn-warning,
 a.h-btn-red,
 a.h-btn-danger{
-	text-decoration: none;
+	text-decoration: none; //去掉下划线
 }
+
