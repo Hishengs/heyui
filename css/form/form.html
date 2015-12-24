@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HeyUI-form</title>
+	<link rel="stylesheet" type="text/css" href="./form.css">
+	<link rel="stylesheet" type="text/css" href="../button/button.css">
+	<style>
+	*{
+		font-family: 'Microsoft Yahei'
+	}
+	div.form{width: 600px;}
+	</style>
+</head>
+<body>
+<div class="form">
+	<h3>表单 Form</h3>
+	<h4>Basic</h4>
+	<p>1.input</p>
+	<input type="text" class="h-input" placeholder="在此输入文字">
+	<button class="h-btn h-btn-primary">提交</button>
+	<p>2.textarea</p>
+	<textarea name="" id="" cols="30" rows="3"></textarea>
+	<p>3.select</p>
+	<select name="sl" id="sl">
+		<option value="0">梅西</option>
+		<option value="1">苏亚雷斯</option>
+		<option value="2">内马尔</option>
+	</select>
+	<h4>Disabled</h4>
+	<input type="text" class="h-input block" placeholder="在此输入文字" disabled="disabled">
+	<textarea name="" id="" class="block" cols="30" rows="3" disabled="disabled"></textarea>
+	<select name="sl" id="sl" class="block" disabled="disabled">
+		<option value="0">梅西</option>
+		<option value="1">苏亚雷斯</option>
+		<option value="2">内马尔</option>
+	</select>
+	<p>只读</p>
+	<input type="text" class="h-input block" placeholder="在此输入文字" readonly>
+	<h4>Round</h4>
+	<input type="text" class="round">
+</div>
+</body>
+</html>

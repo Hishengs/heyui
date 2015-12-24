@@ -1,0 +1,154 @@
+/*default 默认样式*/
+.h-btn{
+	padding: 4px 8px;
+	color: #333333;
+	background: #eeeeee;
+	border: 1px solid #cdcdcd;
+	display: inline-block;
+	cursor:pointer;
+	line-height: 1.328;
+	/* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); */
+}
+.h-btn:visited,
+.h-btn:hover,
+.h-btn:active,
+.h-btn .active{
+	background: #dddddd;
+	border: 1px solid #cccccc;
+}
+.h-btn:hover{
+	/* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); */
+}
+.h-btn-round{
+	border-radius: 3px;
+}
+
+/*blue/primary*/
+.h-btn-blue,.h-btn-primary{
+	color: #ffffff;
+	background: #3a9aff;
+	border: 1px solid #2989ee;
+}
+.h-btn-blue:visited,
+.h-btn-blue:hover,
+.h-btn-blue:active,
+.h-btn-primary:visited,
+.h-btn-primary:hover,
+.h-btn-primary:active,
+.h-btn-primary.active,
+.h-btn-blue.active{
+	background: #2989ee;
+	border: 1px solid #2989ee;
+}
+
+/*orange:#ff6700*/
+.h-btn-orange,.h-btn-warning{
+	color: #ffffff;
+	background: #ff6700;
+	border: 1px solid #ee5600;
+}
+.h-btn-orange:visited,
+.h-btn-orange:hover,
+.h-btn-orange:active,
+.h-btn-warning:visited,
+.h-btn-warning:hover,
+.h-btn-warning:active,
+.h-btn-orange.active,
+.h-btn-warning.active{
+	background: #ee5600;
+	border: 1px solid #ee5600;
+}
+/*green/success:#7ead67*/
+.h-btn-green,.h-btn-success{
+	color: #ffffff;
+	background: #8fbe33;
+	border: 1px solid #7ead22;
+}
+.h-btn-green:visited,
+.h-btn-green:hover,
+.h-btn-green:active,
+.h-btn-success:visited,
+.h-btn-success:hover,
+.h-btn-success:active,
+.h-btn-success.active,
+.h-btn-green.active{
+	background: #7ead22;
+	border: 1px solid #7ead22;
+}
+/*red/danger:#e53935*/
+.h-btn-red,.h-btn-danger{
+	color: #ffffff;
+	background: #e53935;
+	border: 1px solid #d42824;
+}
+.h-btn-red:visited,
+.h-btn-red:hover,
+.h-btn-red:active,
+.h-btn-danger:visited,
+.h-btn-danger:hover,
+.h-btn-danger:active,
+.h-btn-danger.active,
+.h-btn-red.active{
+	background: #d42824;
+	border: 1px solid #d42824;
+}
+/*sky-blue/info:#e53935*/
+.h-btn-sky-blue,.h-btn-info{
+	color: #ffffff;
+	background: #8fbedd;
+	border: 1px solid #7eadcc;
+}
+.h-btn-sky-blue:visited,
+.h-btn-sky-blue:hover,
+.h-btn-sky-blue:active,
+.h-btn-info:visited,
+.h-btn-info:hover,
+.h-btn-info:active,
+.h-btn-info.active,
+.h-btn-sky-blue.active{
+	background: #7eadcc;
+	border: 1px solid #7eadcc;
+}
+/*large*/
+.h-btn-large{
+	padding: 6px 10px;
+	font-size: 16px;
+}
+/*small*/
+.h-btn-small{
+	padding: 3px 6px;
+	font-size: 13px;
+}
+/*mini*/
+.h-btn-mini{
+	padding: 1px;
+	font-size: 12px;
+}
+/*block button*/
+.h-btn-block{
+	display: block;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+/*disabled 禁用状态*/
+.h-btn[disabled],button[disabled],button.disabled,a.disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled{
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+/*link button 链接按钮样式*/
+a.h-btn,
+a.h-btn-blue,
+a.h-btn-primary,
+a.h-btn-sky-blue,
+a.h-btn-info,
+a.h-btn-orange,
+a.h-btn-warning,
+a.h-btn-red,
+a.h-btn-danger{
+	text-decoration: none;
+}

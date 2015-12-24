@@ -1,0 +1,62 @@
+table,.h-table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	display: table;
+}
+table > thead > tr > th,
+table > tfoot > tr > th,
+table > tbody > tr > td,
+.h-table > thead > tr > th,
+.h-table > tfoot > tr > th,
+.h-table > tbody > tr > td{
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+table > thead > tr > th,
+.h-table > thead > tr > th{
+	border-bottom: 1px solid #bbb;
+}
+/*table-status*/
+.h-table > tbody > tr.active,
+table > tbody > tr.active{
+	background-color: #efefef;
+}
+.h-table > tbody > tr.success,
+table > tbody > tr.success{
+	background-color: #ecffaa;
+}
+.h-table > tbody > tr.info,
+table > tbody > tr.info{
+	background-color: #cfefff;
+}
+.h-table > tbody > tr.warning,
+table > tbody > tr.warning{
+	background-color: #fdaf7f;
+}
+.h-table > tbody > tr.danger,
+table > tbody > tr.danger{
+	background-color: #ef8f8f;
+}
+/*table-striped 条纹*/
+.h-table-striped > tbody > tr:nth-child(odd){
+	background-color: #efefef;
+}
+.h-table-striped > tbody > tr:nth-child(even){
+	background-color: #ffffff;
+}
+/*table-borderd 有边框的*/
+.h-table-borderd{
+	border: 1px solid #ddd;
+}
+.h-table-borderd > thead > tr > th,
+.h-table-borderd > tbody > tr > td{
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+/*table-hover*/
+.h-table-hover > tbody > tr:hover{
+	background-color: #eeeeee !important;
+	cursor:default;
+}
+
+

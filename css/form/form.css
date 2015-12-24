@@ -1,0 +1,25 @@
+input,textarea,select{
+	padding: 4px;
+}
+input,.h-input{
+	border: 1px solid #bcbcbc;
+}
+input:focus,.h-input:focus{
+	box-shadow: 0px 0px 2px 1px rgba(186, 186, 186, 0.5);
+}
+/*round*/
+input.round{
+	border-radius: 3px;
+}
+/*block*/
+input.block,textarea.block,select.block{
+	display: block;
+}
+/*disabled*/
+input[disabled],textarea[disabled],select[disabled]{
+	cursor: not-allowed;
+}
+/*select*/
+select option{
+	padding: 4px;
+}

@@ -1,0 +1,172 @@
+*{
+	font-family: 'Microsoft Yahei';
+}
+body,html{
+	font-size: 10px;
+	/* width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0; */
+}
+p,div,span,a{
+	font-size: 1.4rem;
+	font-size: 14px;
+}
+/**h1-h6*/
+h1{
+	font-size: 3.2rem;
+	font-size: 32px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px; 
+}
+h2{
+	font-size: 2.8rem;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h3{
+	font-size: 2.2rem;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h4{
+	font-size: 1.8rem;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+h5{
+	font-size: 1.6rem;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+h6{
+	font-size: 1.2rem;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+/**文本对齐*/
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+/**文本大小*/
+.text-xxxlarge{
+	font-size: 3.0rem;
+	font-size: 30px;
+}
+.text-xxlarge{
+	font-size: 2.4rem;
+	font-size: 24px;
+}
+.text-xlarge{
+	font-size: 2.0rem;
+	font-size: 20px;
+}
+.text-large{
+	font-size: 1.6rem;
+	font-size: 16px;
+}
+.text-small{
+	font-size: 1.2rem;
+	font-size: 12px;
+}
+/*文本颜色*/
+.text-primary,.text-blue{
+	color: #3a9aff !important;
+}
+.text-success,.text-green{
+	color: #8fbe33 !important;
+}
+.text-info,.text-sky-blue{
+	color: #8fbedd !important;
+}
+.text-warning,.text-orange{
+	color: #ff6700 !important;
+}
+.text-danger,.text-red{
+	color: #e53935 !important;
+}
+/*引用*/
+div.h-quote,p.h-quote,span.h-quote{
+	border-left: 5px solid #aaa;
+	padding: 10px 15px;
+	background-color: #eee;
+	margin-bottom: 10px;
+}
+/*背景颜色*/
+.bg-primary,.bg-blue{
+	background-color: #3a9aff !important; 
+	color: #ffffff;
+}
+.bg-success,.bg-green{
+	background-color: #8fbe33 !important;
+	color: #ffffff;
+}
+.bg-info,.bg-sky-blue{
+	background-color: #8fbedd !important;
+	color: #ffffff;
+}
+.bg-warning,.bg-orange{
+	background-color: #ff6700 !important;
+	color: #ffffff;
+}
+.bg-danger,.bg-red{
+	background-color: #e53935 !important;
+	color: #ffffff;
+}
+
+/*显示 display*/
+.dis-inline-block{
+	display: inline-block;
+}
+.dis-block{
+	display: block;
+}
+/*hr 分割线*/
+hr{
+	margin: 10px 0px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #ddd;
+}
+/**hide 显示/隐藏*/
+.show{
+	display: block !important;
+}
+.invisible{
+	visibility: hidden !important;
+}
+.hide{
+	display: none !important;
+	visibility: hidden !important;
+}
+/**浮动*/
+.f-left{
+	float: left !important;
+}
+.f-right{
+	float: right !important;
+}
+/*clear float 清除浮动*/
+.clear-float:before,.clear-float:after{
+	display: table;
+	content: "";
+}
+.clear-float:after{
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}

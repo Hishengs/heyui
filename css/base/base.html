@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HeyUI Base</title>
+	<link rel="stylesheet" type="text/css" href="./base.css">
+	<link rel="stylesheet" type="text/css" href="../font/font.css">
+	<style>
+		div.dis-inline-block,span.dis-block{
+			background-color: #eee;
+			padding: 10px;
+		}
+		div.bg-color div{
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+<h3>基础样式</h3>
+
+<h4>1.引用 <i class="h-icon h-icon-paperclip"></i></h4><hr>
+<div class="h-quote">这是一段引用...div.h-quote</div>
+<p class="h-quote">这是一段引用...p.h-quote</p>
+<span class="h-quote dis-inline-block">这是一段引用...span.h-quote</span>
+
+<h4>2.对齐</h4><hr>
+<p class="h-quote text-left">居左对齐 h-quote.text-left</p>
+<p class="h-quote text-center">居中对齐h-quote.text-center</p>
+<p class="h-quote text-right">居右对齐h-quote.text-right</p>
+
+<h4>3.显示-display</h4><hr>
+<p>block</p>
+<span class="dis-block">span.dis-block</span>
+<p>inline-block</p>
+<div class="dis-inline-block">div.dis-inline-block</div>
+
+<h4>4.文本大小</h4><hr>
+<div class="h-quote">
+	<p class="text-xxxlarge"><i class="h-icon h-icon-warning-sign"></i> text-xxxlarge</p>
+	<p class="text-xxlarge"><i class="h-icon h-icon-warning-sign"></i> text-xxlarge</p>
+	<p class="text-xlarge"><i class="h-icon h-icon-warning-sign"></i> text-xlarge</p>
+	<p><i class="h-icon h-icon-warning-sign"></i> normal</p>
+	<p class="text-small"><i class="h-icon h-icon-warning-sign"></i> text-small</p>
+</div>
+
+<h4>5.文本颜色</h4><hr>
+<div class="h-quote">
+	<p class="text-primary">主要: text-primary/blue</p>
+	<p class="text-success">成功: text-success/green</p>
+	<p class="text-info">信息: text-info/sky-blue</p>
+	<p class="text-warning"><i class="h-icon h-icon-warning-sign"></i> 警告: text-warning/orange</p>
+	<p class="text-danger">危险: text-danger/red</p>
+</div>
+
+<h4>6.背景颜色</h4><hr>
+<div class="h-quote bg-color">
+	<div class="bg-primary">主要: bg-primary/blue</div>
+	<div class="bg-success">成功: bg-success/green</div>
+	<div class="bg-info">信息: bg-info/sky-blue</div>
+	<div class="bg-warning">警告: bg-warning/orange</div>
+	<div class="bg-danger">危险: bg-danger/red</div>
+</div>
+
+<h4>7.hide 显示/隐藏</h4><hr>
+<div class="h-quote v-hide">
+	<p>通过添加show,hide,invisible来显示或隐藏元素，其中hide既不显示元素也不占用文档流位置</p>
+</div>
+
+<h4>8.浮动 float (使用.clear-float来清除浮动)</h4><hr>
+<div class="h-quote float text-center">
+	<span class="dis-inline-block bg-success f-left">左浮动</span>
+	<span class="dis-inline-block bg-warning f-right">右浮动</span>
+	<div class="clear-float"></div><!--清除浮动-->
+</div>
+</body>
+</html>
