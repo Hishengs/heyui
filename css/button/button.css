@@ -1,10 +1,11 @@
+@import url("../base/base.css");
 /*1.default 默认样式*/
 .h-btn,.h-btn:visited{
 	padding: 4px 8px;
 	color: #333333;
 	font-size: 14px;
-	*font-size: 1.4rem;
-	background: #eeeeee;
+	*font-size: 1.4rem !important;
+	background-color: #eeeeee;
 	border: 1px solid #cdcdcd;
 	display: inline-block;
 	cursor:pointer;
@@ -13,7 +14,7 @@
 .h-btn:hover,
 .h-btn:active,
 .h-btn .active{
-	background: #dddddd;
+	background-color: #dddddd;
 	border: 1px solid #cccccc;
 }
 .h-btn.light,.h-btn.light:visited{/*light*/
@@ -30,7 +31,7 @@
 /*2.主要 blue-primary*/
 .h-btn-blue,.h-btn-primary,.h-btn-blue:visited,.h-btn-primary:visited{
 	color: #ffffff;
-	background: #3a9aff;
+	background-color: #3a9aff;
 	border: 1px solid #2989ee;
 }
 
@@ -40,7 +41,7 @@
 .h-btn-primary:active,
 .h-btn-primary.active,
 .h-btn-blue.active{
-	background: #2989ee;
+	background-color: #2989ee;
 	border: 1px solid #2989ee;
 }
 .h-btn-blue.light,.h-btn-primary.light,.h-btn-blue.light:visited,.h-btn-primary.light:visited{/*light*/
@@ -61,7 +62,7 @@
 /*2.成功 green-success:#7ead67*/
 .h-btn-green,.h-btn-success,.h-btn-green:visited,.h-btn-success:visited{
 	color: #ffffff;
-	background: #8fbe33;
+	background-color: #8fbe33;
 	border: 1px solid #7ead22;
 }
 .h-btn-green:hover,
@@ -70,7 +71,7 @@
 .h-btn-success:active,
 .h-btn-success.active,
 .h-btn-green.active{
-	background: #7ead22;
+	background-color: #7ead22;
 	border: 1px solid #7ead22;
 }
 .h-btn-green.light,.h-btn-success.light,.h-btn-green.light:visited,.h-btn-success.light:visited{/*light*/
@@ -90,7 +91,7 @@
 /*3.信息 sky-blue/info:#e53935*/
 .h-btn-sky-blue,.h-btn-info,.h-btn-sky-blue:visited,.h-btn-info:visited{
 	color: #ffffff;
-	background: #8fbeef;
+	background-color: #8fbeef;
 	border: 1px solid #7eadde;
 }
 .h-btn-sky-blue:hover,
@@ -99,7 +100,7 @@
 .h-btn-info:active,
 .h-btn-info.active,
 .h-btn-sky-blue.active{
-	background: #7eadde;
+	background-color: #7eadde;
 	border: 1px solid #7eadde;
 }
 .h-btn-sky-blue.light,.h-btn-info.light,.h-btn-sky-blue.light:visited,.h-btn-info.light:visited{/*light*/
@@ -120,7 +121,7 @@
 /*4.警告 orange-warning*/
 .h-btn-orange,.h-btn-warning,.h-btn-orange:visited,.h-btn-warning:visited{
 	color: #ffffff;
-	background: #ff6700;
+	background-color: #ff6700;
 	border: 1px solid #ee5600;
 }
 .h-btn-orange:hover,
@@ -129,7 +130,7 @@
 .h-btn-warning:active,
 .h-btn-orange.active,
 .h-btn-warning.active{
-	background: #ee5600;
+	background-color: #ee5600;
 	border: 1px solid #ee5600;
 }
 .h-btn-orange.light,.h-btn-warning.light,.h-btn-orange.light:visited,.h-btn-warning.light:visited{/*light*/
@@ -149,7 +150,7 @@
 /*5.危险 red/danger:#e53935*/
 .h-btn-red,.h-btn-danger,.h-btn-red:visited,.h-btn-danger:visited{
 	color: #ffffff;
-	background: #e53935;
+	background-color: #e53935;
 	border: 1px solid #d42824;
 }
 .h-btn-red:hover,
@@ -158,7 +159,7 @@
 .h-btn-danger:active,
 .h-btn-danger.active,
 .h-btn-red.active{
-	background: #d42824;
+	background-color: #d42824;
 	border: 1px solid #d42824;
 }
 .h-btn-red.light,.h-btn-danger.light,.h-btn-red.light:visited,.h-btn-danger.light:visited{/*light*/
@@ -203,6 +204,7 @@
 	width: 100%;
 	padding-left: 0;
 	padding-right: 0;
+	text-align: center;
 }
 
 /*9.禁用状态 disabled*/
@@ -212,6 +214,8 @@ input[type="submit"].disabled,
 input[type="reset"].disabled{
   cursor: not-allowed;
   opacity: 0.45;
+  filter:alpha(opacity=45); /*IE5-IE7*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=45)"; /*IE 8*/
 }
 
 /*10.链接按钮样式 link button*/

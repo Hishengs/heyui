@@ -15,46 +15,49 @@ body,html{
 	padding: 0;
 	margin: 0; */
 }
+@media screen and (max-width:960px) {
+	body,html{font-size: 12px;}
+} 
 p,div,span,a,button,input,textarea{
-	font-size: 1.4rem;
+	font-size: 1.4rem !important;
 	font-size: 14px;
 }
 /**h1-h6*/
 h1{
-	font-size: 3.2rem;
+	font-size: 3.2rem !important;
 	font-size: 32px;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 10px; 
 }
 h2{
-	font-size: 2.8rem;
+	font-size: 2.8rem !important;
 	font-size: 28px;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
 h3{
-	font-size: 2.2rem;
+	font-size: 2.2rem !important;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
 h4{
-	font-size: 1.8rem;
+	font-size: 1.8rem !important;
 	font-size: 18px;
 	font-weight: bold;
 	margin: 10px 0px;
 }
 h5{
-	font-size: 1.6rem;
+	font-size: 1.6rem !important;
 	font-size: 16px;
 	font-weight: bold;
 	margin: 10px 0px;
 }
 h6{
-	font-size: 1.2rem;
+	font-size: 1.2rem !important;
 	font-size: 12px;
 	font-weight: bold;
 	margin: 10px 0px;
@@ -71,23 +74,23 @@ h6{
 }
 /**文本大小*/
 .text-xxxlarge{
-	font-size: 3.0rem;
+	font-size: 3.0rem !important;
 	font-size: 30px;
 }
 .text-xxlarge{
-	font-size: 2.4rem;
+	font-size: 2.4rem !important;
 	font-size: 24px;
 }
 .text-xlarge{
-	font-size: 2.0rem;
+	font-size: 2.0rem !important;
 	font-size: 20px;
 }
 .text-large{
-	font-size: 1.6rem;
+	font-size: 1.6rem !important;
 	font-size: 16px;
 }
 .text-small{
-	font-size: 1.2rem;
+	font-size: 1.2rem !important;
 	font-size: 12px;
 }
 /*文本颜色*/
